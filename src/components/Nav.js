@@ -8,7 +8,6 @@ const Nav = () => {
         <li><a href="#reservation">Reservation</a></li>
         <li><a href="#orderOnline">Order Onlin</a></li>
         <li><a href="#login">Login</a></li>
-        
     </ul>
   </nav>;
 };
