@@ -1,0 +1,29 @@
+.heroContainer{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color:#495E57;
+}
+
+.heroContainer h1{
+    color: #F4CE14;
+    font-size: 50px;
+    
+}
+.heroContainer h2{
+     font-size: 30px;
+     color: white;
+}
+
+.heroContainer p{
+    color: white;
+    margin-top: 5px;
+}
+
+.heroContainer img{
+   
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
