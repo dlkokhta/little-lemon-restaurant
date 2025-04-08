@@ -20,10 +20,22 @@
     margin-top: 5px;
 }
 
+.heroImageContainer{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
+}
+
 .heroContainer img{
-   
-    height: auto;
-    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
-    
+
+}
+
+
+.herroButton{
+    margin-top: 40px;
 }
