@@ -1,0 +1,15 @@
+.TestimonialsDetailsContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px 50px 5px;
+}
+
+.TestimonialsDetailsContainer2 img{
+ width: 100px;
+}
+
+.TestimonialsDetailsContainer2{
+    font-size: 10px;
+}

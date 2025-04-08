@@ -1,0 +1,17 @@
+.highlightsContainer{
+    background-color: white;
+    padding: 30px;
+
+}
+
+.highlightsContainerHeader{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+
+.highlightsContainerCards{
+    margin-top: 40px;
+}
+
