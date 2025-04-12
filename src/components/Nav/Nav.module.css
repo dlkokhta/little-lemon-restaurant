@@ -1,0 +1,24 @@
+.mainNav a{
+
+    text-decoration: none;
+}
+
+.mainNav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    font-size: 1.2rem;
+
+}
+
+.mainNav li a{
+    color: #495E57;
+   
+}
+
+.mainNav li a:hover {
+    color: #F4CE14;
+    
+}
+

@@ -1,37 +1,42 @@
 .HighlightsDetailsContainer{
   background-color: #EDEFEE;
-  
+  border-radius: 1.25rem;
+  max-width: 43rem;
+
 }
-   
+
 
 .HighlightsDetailsContainer img{
     width: 100%;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+   
 }
 
 .HighlightsDetailsContainerPrice{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     align-items: center;
-   
+
 }
 
-
-
 .HighlightsDetailsContainer p{
-  margin-top: 30px;
+  margin-top: 1.8rem;
 }
 
 .HighlightsDetailsContainer h5{
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 .HighlightsDetailsContainer2{
-  padding: 0px 10px 50px  10px;
+  padding: 0 0.6rem 3rem  0.6rem;
 }
 
-.HighlightsDetailsContainerPrice{
-  
+.HighlightsDetailsContainerPrice h4{
+  color: red;
 }
+
+
 

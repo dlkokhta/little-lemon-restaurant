@@ -1,10 +1,18 @@
 header{
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  align-items: center;
+  padding: 1.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  
 }
 
-nav{
+.headerNav{
   display: none;
 }
 
@@ -12,4 +20,59 @@ nav{
   width: 25px;
   height: auto;
 }
+
+
+@media (min-width: 768px) {
+  header img{
+      width: 12rem;
+  }
+
+}
+@media (min-width: 1024px) {
+  header{
+      padding-left: 5rem;
+      padding-right: 5rem;
+  }
+  .headerNav{
+    display: block;
+  }
+  .headerHamburgerContainer{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  header{
+      padding-left: 10rem;
+      padding-right: 10rem;
+  }
+
+}
+@media (min-width: 1536px){
+  header{
+      padding-left: 15rem;
+      padding-right: 15rem;
+  }
+
+}
+
+@media (min-width:1836px){
+  header{
+      padding-left: 25rem;
+      padding-right: 25rem;
+  }
+
+}
+
+@media (min-width:1920px){
+  header{
+      padding-left: 27rem;
+      padding-right: 27rem;
+  }
+}
+
+
+
+
 

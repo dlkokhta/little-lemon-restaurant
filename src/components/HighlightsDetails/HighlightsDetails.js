@@ -1,14 +1,13 @@
 import styles from "./HighlightsDetails.module.css";
-import GreekSalad from "../../assets/greekSalad.jpg";
 
-const HighlightsDetails = () => {
+const HighlightsDetails = ({ foodName, foodImage }) => {
   return (
     <div className={styles.HighlightsDetailsContainer}>
-      <img src={GreekSalad} />
+      <img src={foodImage} alt="GreekSalad" />
 
       <div className={styles.HighlightsDetailsContainer2}>
         <div className={styles.HighlightsDetailsContainerPrice}>
-          <h3>Greek Salad</h3>
+          <h3>{foodName}</h3>
           <h4>$12.99</h4>
         </div>
         <p>

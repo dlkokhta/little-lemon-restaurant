@@ -1,6 +1,6 @@
 .highlightsContainer{
     background-color: white;
-    padding: 30px;
+    padding: 1.8rem;
 
 }
 
@@ -12,6 +12,59 @@
 }
 
 .highlightsContainerCards{
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
+
+@media (min-width: 640px) {
+    .highlightsCards{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 1.5rem;
+    }
+    
+  }
+
+  @media (min-width:1024px){
+    .highlightsContainer{
+        padding-top: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .highlightsCards{
+        grid-template-columns: repeat(3, 3fr);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .highlightsContainer{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .highlightsContainer{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+  }
+
+  
+@media (min-width:1836px){
+    .highlightsContainer{
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+  }
+
+  @media (min-width:1920px){
+    .highlightsContainer{
+        padding-left: 27rem;
+        padding-right: 27rem;
+    }
+  }
+
+
+
 

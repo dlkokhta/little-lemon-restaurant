@@ -1,20 +1,18 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-// import Footer from './components/Footer/Footer';
-import Hero from "./components/Hero/Hero";
-import Highlights from "./components/Highlights/Highlights";
-import Testimonials from "./components/Testimonials/Testimonials";
-import About from "./components/About/About";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import HomePage from "../src/pages/HomePage";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <About />
-      {/* <Footer /> */}
+      <div className="test">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/booking" element={<BookingPage />}></Route> */}
+        </Routes>
+      </div>
     </>
   );
 }

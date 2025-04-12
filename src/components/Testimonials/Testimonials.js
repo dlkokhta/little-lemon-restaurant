@@ -3,16 +3,21 @@ import TestimonialsDetailsDetails from "../TestimonialsDetails/TestimonialsDetai
 
 const Testimonials = () => {
   return (
-    <div className={styles.TestimonialsDetailsContainer}>
+    <div className={styles.testimonialsContainer}>
       <h1>Testimonials</h1>
-      <div>
-        <TestimonialsDetailsDetails />
-      </div>
-      <div>
-        <TestimonialsDetailsDetails />
-      </div>
-      <div>
-        <TestimonialsDetailsDetails />
+      <div className={styles.testimonialsContainer2}>
+        <div>
+          <TestimonialsDetailsDetails />
+        </div>
+        <div>
+          <TestimonialsDetailsDetails />
+        </div>
+        <div>
+          <TestimonialsDetailsDetails />
+        </div>
+        <div>
+          <TestimonialsDetailsDetails />
+        </div>
       </div>
     </div>
   );
