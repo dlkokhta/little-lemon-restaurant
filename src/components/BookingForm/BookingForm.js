@@ -2,19 +2,18 @@ import styles from "./BookingForm.module.css";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-const BookingForm = () => {
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [guests, setGuests] = useState(1);
-  const [occasion, setOccasion] = useState("Birthday");
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
+const BookingForm = ({
+  date,
+  setDate,
+  time,
+  setTime,
+  guests,
+  setGuests,
+  occasion,
+  setOccasion,
+  availableTimes,
+  setAvailableTimes,
+}) => {
   const { register, handleSubmit } = useForm();
 
   const handleBookingSubmit = (data) => {
