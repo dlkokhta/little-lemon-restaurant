@@ -13,7 +13,7 @@ const Hero = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className={styles.herroButton}>
-          <Button />
+          <Button buttonTitle="Reserve a table" />
         </div>
       </div>
       <div className={styles.heroImageContainer}>

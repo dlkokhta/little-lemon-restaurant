@@ -6,7 +6,9 @@ const Nav = () => {
     <nav className={styles.mainNav}>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <Link smooth to="/">
+            Home
+          </Link>
         </li>
         <li>
           <Link smooth to="/#about">

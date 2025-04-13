@@ -1,13 +1,7 @@
 import styles from "./Button.module.css";
 
-const Button = () => {
-
-    return  (
-        <button className={styles.buttonContainer}>
-             Reserve a Table
-        </button>
-    )
-}
-
+const Button = ({ buttonTitle }) => {
+  return <button className={styles.buttonContainer}>{buttonTitle}</button>;
+};
 
 export default Button;
