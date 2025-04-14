@@ -13,7 +13,11 @@ const Footer = () => {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerContainerLogo}>
-        <img src={footerLogo} alt="logo" />
+        <img
+          src={footerLogo}
+          alt="Little Lemon restaurant logo"
+          aria-label="Little Lemon Logo"
+        />
       </div>
 
       <div className={styles.footerContainer2}>
@@ -27,16 +31,16 @@ const Footer = () => {
         <h3>CONTACT</h3>
         <address>
           <div className={styles.addressContainer}>
-            <img src={location} alt="location" />
+            <img src={location} alt="Location icon" aria-label="Location" />
             <p>123 Main St, City, Country</p>
           </div>
           <div className={styles.addressContainer}>
-            <img src={phone} alt="phone" />
+            <img src={phone} alt="Phone icon" aria-label="Phone" />
             <p>Phone: +123456789</p>
           </div>
 
           <div className={styles.addressContainer}>
-            <img src={email} alt="email" />
+            <img src={email} alt="Email icon" aria-label="Email" />
             <p>Email: little@lemon.com</p>
           </div>
         </address>
@@ -45,10 +49,18 @@ const Footer = () => {
       <div className={styles.footerContainer4}>
         <h2>SOCIAL MEDIA</h2>
         <div className={styles.footerContainer4SocialMedia}>
-          <img src={facebook} alt="facebook" />
-          <img src={instagram} alt="instagram" />
-          <img src={x} alt="x" />
-          <img src={youtube} alt="youtube" />
+          <a href="https://facebook.com" aria-label="Facebook">
+            <img src={facebook} alt="Facebook logo" />
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram">
+            <img src={instagram} alt="Instagram logo" />
+          </a>
+          <a href="https://x.com" aria-label="Twitter">
+            <img src={x} alt="X logo" />
+          </a>
+          <a href="https://youtube.com" aria-label="YouTube">
+            <img src={youtube} alt="YouTube logo" />
+          </a>
         </div>
       </div>
     </div>

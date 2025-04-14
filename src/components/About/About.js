@@ -4,11 +4,11 @@ import marioAndAdrian2 from "../../assets/marioAndAdrian2.jpg";
 
 const About = () => {
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} aria-labelledby="about-heading">
       <div>
         <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
-        <p>
+        <h2 aria-labelledby="about-heading">Chicago</h2>
+        <p aria-describedby="about-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum
           dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

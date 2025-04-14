@@ -1,5 +1,4 @@
 import styles from "./BookingForm.module.css";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const BookingForm = ({
@@ -12,12 +11,12 @@ const BookingForm = ({
   occasion,
   setOccasion,
   availableTimes,
-  setAvailableTimes,
+  dispatch,
 }) => {
   const { register, handleSubmit } = useForm();
 
   const handleBookingSubmit = (data) => {
-    console.log("dataaaa", data);
+    console.log("componentData", data);
   };
 
   return (
@@ -25,6 +24,7 @@ const BookingForm = ({
       <form
         className={styles.formContainer2}
         onSubmit={handleSubmit(handleBookingSubmit)}
+        aria-labelledby="booking-form-title"
       >
         <label htmlFor="res-date">Choose date</label>
         <input
@@ -33,6 +33,7 @@ const BookingForm = ({
           value={date}
           {...register("date")}
           onChange={(e) => setDate(e.target.value)}
+          aria-required="true"
         />
 
         <label htmlFor="res-time">Choose time</label>
@@ -41,6 +42,8 @@ const BookingForm = ({
           value={time}
           {...register("time")}
           onChange={(e) => setTime(e.target.value)}
+          aria-required="true"
+          aria-describedby="time-description"
         >
           {availableTimes.map((t) => (
             <option key={t} value={t}>
@@ -58,6 +61,8 @@ const BookingForm = ({
           id="guests"
           {...register("guests")}
           onChange={(e) => setGuests(e.target.value)}
+          aria-required="true"
+          aria-label="Number of guests between 1 and 10"
         />
 
         <label htmlFor="occasion">Occasion</label>
@@ -66,12 +71,17 @@ const BookingForm = ({
           value={occasion}
           {...register("occasion")}
           onChange={(e) => setOccasion(e.target.value)}
+          aria-label="Occasion"
         >
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
 
-        <input type="submit" value="Make Your reservation" />
+        <input
+          type="submit"
+          value="Make Your reservation"
+          aria-label="Submit reservation form"
+        />
       </form>
     </div>
   );

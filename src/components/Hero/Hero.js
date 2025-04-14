@@ -13,11 +13,15 @@ const Hero = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className={styles.herroButton}>
-          <Button buttonTitle="Reserve a table" />
+          <Button buttonTitle="Reserve a table" ariaLabel="Reserve Table" />
         </div>
       </div>
       <div className={styles.heroImageContainer}>
-        <img src={restauranfood} alt="restauranfood" />
+        <img
+          src={restauranfood}
+          alt="restauranfood"
+          aria-label="Image of food at Little Lemon restaurant"
+        />
       </div>
     </div>
   );

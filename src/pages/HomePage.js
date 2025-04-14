@@ -9,7 +9,6 @@ import styles from "./Homepage.module.css";
 const HomePage = () => {
   return (
     <>
-      {/* <Header /> */}
       <Hero />
       <section id="menu">
         <Highlights />
