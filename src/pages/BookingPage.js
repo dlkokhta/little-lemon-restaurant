@@ -1,19 +1,7 @@
 import BookingForm from "../components/BookingForm/BookingForm";
 import { useState, useReducer } from "react";
 import styles from "./BookingPage.module.css";
-
-const fetchAvailableTimes = (date) => {
-  return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-};
-
-const updateTimes = (state, action) => {
-  return fetchAvailableTimes(action.date);
-};
-
-const initializeTimes = () => {
-  const today = new Date().toISOString().split("T")[0];
-  return fetchAvailableTimes(today);
-};
+import { updateTimes, initializeTimes } from "../utils/timeUtils";
 
 const BookingPage = () => {
   const [date, setDate] = useState("");
