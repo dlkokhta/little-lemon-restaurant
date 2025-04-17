@@ -17,7 +17,7 @@ const BookingPage = ({ submitForm }) => {
   return (
     <div className={styles.bookingPageContainer}>
       <div className={styles.bookingPageContainer2}>
-        <h1>Booking Page</h1>
+        <h1>Reserve Table</h1>
         <BookingForm
           date={date}
           setDate={setDate}

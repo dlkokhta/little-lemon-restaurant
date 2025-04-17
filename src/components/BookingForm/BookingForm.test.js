@@ -50,7 +50,7 @@ describe("BookingForm HTML5 Validation Attributes", () => {
 
   test("Form has a submit button", () => {
     const submitButton = screen.getByRole("button", {
-      name: /submit reservation form/i,
+      name: /make your reservation/i,
     });
     expect(submitButton).toBeInTheDocument();
   });

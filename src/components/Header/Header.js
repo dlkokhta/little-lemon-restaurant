@@ -2,11 +2,14 @@ import styles from "./Header.module.css";
 import Nav from "../Nav/Nav";
 import logo from "../../assets/Logo.svg";
 import hamburderMenu from "../../assets/hamburgerMenu.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <img src={logo} alt="Logo" aria-label="Little Lemon Logo" />
+      <Link to="/">
+        <img src={logo} alt="Logo" aria-label="Little Lemon Logo" />
+      </Link>
       <div className={styles.headerNav}>
         <Nav />
       </div>

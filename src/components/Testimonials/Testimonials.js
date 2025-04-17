@@ -3,7 +3,10 @@ import TestimonialsDetailsDetails from "../TestimonialsDetails/TestimonialsDetai
 
 const Testimonials = () => {
   return (
-    <div className={styles.testimonialsContainer}>
+    <div
+      className={styles.testimonialsContainer}
+      aria-labelledby="testimonials-heading"
+    >
       <h1>Testimonials</h1>
       <div className={styles.testimonialsContainer2}>
         <div>

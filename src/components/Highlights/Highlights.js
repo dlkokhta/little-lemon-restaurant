@@ -9,17 +9,32 @@ const Highlights = () => {
     <div className={styles.highlightsContainer}>
       <div className={styles.highlightsContainerHeader}>
         <h1>Specials!</h1>
-        <Button buttonTitle="Online Menu" />
+        <Button buttonTitle="Online Menu" aria-label="Go to online menu" />
       </div>
-      <div className={styles.highlightsCards}>
+      <div className={styles.highlightsCards} aria-labelledby="specials-header">
         <div className={styles.highlightsContainerCards}>
-          <HighlightsDetails foodImage={GreekSalad} foodName="Greek salad" />
+          <HighlightsDetails
+            foodImage={GreekSalad}
+            foodName="Greek salad"
+            aria-labelledby="food-item-1"
+            aria-describedby="food-description-1"
+          />
         </div>
         <div className={styles.highlightsContainerCards}>
-          <HighlightsDetails foodImage={Bruchetta} foodName="Brushetta" />
+          <HighlightsDetails
+            foodImage={Bruchetta}
+            foodName="Brushetta"
+            aria-labelledby="food-item-2"
+            aria-describedby="food-description-2"
+          />
         </div>
         <div className={styles.highlightsContainerCards}>
-          <HighlightsDetails foodImage={GreekSalad} foodName="Lemon Dessert" />
+          <HighlightsDetails
+            foodImage={GreekSalad}
+            foodName="Lemon Dessert"
+            aria-labelledby="food-item-3"
+            aria-describedby="food-description-3"
+          />
         </div>
       </div>
     </div>

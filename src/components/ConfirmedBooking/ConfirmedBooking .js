@@ -2,9 +2,9 @@ import styles from "./ConfirmedBooking.module.css";
 
 const ConfirmedBooking = () => {
   return (
-    <h1 className={styles.confirmBookingContainer}>
-      booking has been confirmed
-    </h1>
+    <div className={styles.confirmBookingContainer}>
+      <h1>Your reservation confirmed!</h1>
+    </div>
   );
 };
 
