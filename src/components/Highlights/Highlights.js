@@ -9,7 +9,7 @@ const Highlights = () => {
     <div className={styles.highlightsContainer}>
       <div className={styles.highlightsContainerHeader}>
         <h1>Specials!</h1>
-        <Button />
+        <Button buttonTitle="Online Menu" />
       </div>
       <div className={styles.highlightsCards}>
         <div className={styles.highlightsContainerCards}>
