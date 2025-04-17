@@ -21,7 +21,9 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <a href="#reservation">Reservation</a>
+          <Link smooth to="/booking">
+            Reservation
+          </Link>
         </li>
         <li>
           <a href="#orderOnline">Order Online</a>

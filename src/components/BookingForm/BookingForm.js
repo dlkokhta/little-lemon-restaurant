@@ -12,11 +12,13 @@ const BookingForm = ({
   setOccasion,
   availableTimes,
   dispatch,
+  submitForm,
 }) => {
   const { register, handleSubmit } = useForm();
 
   const handleBookingSubmit = (data) => {
-    console.log("componentData", data);
+    submitForm(data);
+    console.log("dataa", data);
   };
 
   return (

@@ -1,6 +1,7 @@
 import restauranfood from "../../assets/restauranfood.jpg";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,7 +14,9 @@ const Hero = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className={styles.herroButton}>
-          <Button buttonTitle="Reserve a table" ariaLabel="Reserve Table" />
+          <Link to="/booking">
+            <Button buttonTitle="Reserve a table" ariaLabel="Reserve Table" />
+          </Link>
         </div>
       </div>
       <div className={styles.heroImageContainer}>

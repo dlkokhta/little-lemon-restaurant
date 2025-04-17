@@ -3,7 +3,7 @@ import { useState, useReducer } from "react";
 import styles from "./BookingPage.module.css";
 import { updateTimes, initializeTimes } from "../utils/timeUtils";
 
-const BookingPage = () => {
+const BookingPage = ({ submitForm }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
@@ -29,6 +29,7 @@ const BookingPage = () => {
           setOccasion={setOccasion}
           availableTimes={availableTimes}
           dispatch={dispatch}
+          submitForm={submitForm}
         />
       </div>
     </div>
