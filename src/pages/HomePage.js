@@ -4,7 +4,6 @@ import Highlights from "../components/Highlights/Highlights";
 import Testimonials from "../components/Testimonials/Testimonials";
 import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
-import styles from "./Homepage.module.css";
 
 const HomePage = () => {
   return (

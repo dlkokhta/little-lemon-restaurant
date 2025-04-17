@@ -16,19 +16,21 @@ const BookingPage = () => {
 
   return (
     <div className={styles.bookingPageContainer}>
-      <h1>Booking Page</h1>
-      <BookingForm
-        date={date}
-        setDate={setDate}
-        time={time}
-        setTime={setTime}
-        guests={guests}
-        setGuests={setGuests}
-        occasion={occasion}
-        setOccasion={setOccasion}
-        availableTimes={availableTimes}
-        dispatch={dispatch}
-      />
+      <div className={styles.bookingPageContainer2}>
+        <h1>Booking Page</h1>
+        <BookingForm
+          date={date}
+          setDate={setDate}
+          time={time}
+          setTime={setTime}
+          guests={guests}
+          setGuests={setGuests}
+          occasion={occasion}
+          setOccasion={setOccasion}
+          availableTimes={availableTimes}
+          dispatch={dispatch}
+        />
+      </div>
     </div>
   );
 };

@@ -1,3 +1,68 @@
 .bookingPageContainer{
-    margin-top: 8rem;
+    padding-top: 10rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
 }
+
+.bookingPageContainer2 h1{
+   margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .bookingPageContainer{
+
+        padding-left: 10rem;
+        padding-right: 10rem;
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .bookingPageContainer{
+        padding-left: 13rem;
+        padding-right: 13rem;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .bookingPageContainer{
+        padding-left: 20rem;
+        padding-right: 20rem;
+
+    }
+}
+
+@media (min-width: 1280px) {
+    .bookingPageContainer{
+        padding-left: 27rem;
+        padding-right: 27rem;
+
+    }
+}
+
+@media (min-width: 1536px) {
+    .bookingPageContainer{
+        padding-left: 34rem;
+        padding-right: 34rem;
+
+    }
+}
+
+@media (min-width: 1836px) {
+    .bookingPageContainer{
+        padding-left: 42rem;
+        padding-right: 42rem;
+
+    }
+}
+
+@media (min-width: 1920px) {
+    .bookingPageContainer{
+        padding-left: 47rem;
+        padding-right: 47rem;
+
+    }
+}
+
