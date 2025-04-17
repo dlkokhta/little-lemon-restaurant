@@ -4,7 +4,8 @@ import styles from "./BookingPage.module.css";
 import { updateTimes, initializeTimes } from "../utils/timeUtils";
 
 const BookingPage = ({ submitForm }) => {
-  const [date, setDate] = useState("");
+  const today = new Date().toISOString().split("T")[0];
+  const [date, setDate] = useState(today);
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("Birthday");

@@ -18,14 +18,13 @@ const BookingForm = ({
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { errors },
   } = useForm({
     mode: "onChange",
   });
 
   const handleBookingSubmit = (data) => {
     submitForm(data);
-    console.log("dataa", data);
   };
 
   return (

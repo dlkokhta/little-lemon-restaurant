@@ -6,8 +6,8 @@
 .mainNav ul{
     list-style: none;
     display: flex;
-    flex-direction: row;
-    gap:2rem;
+    flex-direction: column;
+    gap:1.5rem;
     font-size: 1.2rem;
 
 }
@@ -19,6 +19,12 @@
 
 .mainNav li a:hover {
     color: #F4CE14;
-    
 }
 
+@media (min-width:1024px){
+    .mainNav ul{
+        gap:2rem;
+        flex-direction: row;
+
+    }
+}

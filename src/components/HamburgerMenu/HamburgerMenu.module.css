@@ -1,0 +1,35 @@
+.burderMenuContainer h1{
+    color: black;
+    position: absolute;
+
+}
+
+.burderMenuContainer{
+    position: absolute;
+    background: white;
+    top:0;
+    left: 0;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 30rem;
+    height: auto;
+
+}
+
+.burderMenuContainer2{
+    display: flex;
+
+}
+
+.burderMenuContainer2 img{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width:1024px){
+    .burderMenuContainer{
+     display: none;
+    }
+}

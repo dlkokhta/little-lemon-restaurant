@@ -3,8 +3,16 @@ import Nav from "../Nav/Nav";
 import logo from "../../assets/Logo.svg";
 import hamburderMenu from "../../assets/hamburgerMenu.svg";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const hamburgerHandleClick = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <header>
       <Link to="/">
@@ -23,8 +31,10 @@ const Header = () => {
           src={hamburderMenu}
           alt="Hamburger menu icon"
           className={styles.hamburgerIcon}
+          onClick={hamburgerHandleClick}
         />
       </div>
+      {isMenuOpen && <HamburgerMenu setIsMenuOpen={setIsMenuOpen} />}
     </header>
   );
 };

@@ -19,6 +19,7 @@ header{
 .hamburgerIcon{
   width: 25px;
   height: auto;
+  cursor: pointer;
 }
 
 
